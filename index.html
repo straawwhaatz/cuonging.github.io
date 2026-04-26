@@ -22,5 +22,19 @@
 </head>
 <body>
     <h1>Cuong is cuonging</h1>
+    <p id="trigger">Click me</p>
+<div id="egg" style="display:none;">🥚 You found the secret</div>
+
+<script>
+  const trigger = document.getElementById('trigger');
+  const egg = document.getElementById('egg');
+
+  trigger.addEventListener('click', (event) => {
+    if (event.detail === 3) {
+      egg.style.display = 'block';
+    }
+  });
+</script>
+
 </body>
 </html>
